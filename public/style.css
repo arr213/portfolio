@@ -1,0 +1,154 @@
+/* ----- SECTIONS ----- */
+
+/* ----- FRONT ----- */
+#front {
+    background-image: url("/images/astoria2.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    opacity: 50%;
+    background-color: #33AA88;
+    padding: 30vh 10vw;
+    height: 100vh;
+}
+    #down-arrow {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        background-color: #444444;
+        color: #ddd;
+        font-size: 30px;
+        padding: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    @keyframes bounce {
+        0% {
+            transform: translateY(0%);
+        }
+        25% {
+            transform: translateY(10%);
+        }
+        75% {
+            transform: translateY(-10%);
+        }
+        100% {
+            transform: translateY(0%);
+        }
+    }
+    .bounce {
+        animation-name: bounce;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: linear;
+        /*animation-delay: 1s;*/
+    }
+
+/* ----- PROFILE ----- */
+#profile {
+    background-color: #999999;
+}
+    img {
+        height: 200px;
+        border-radius: 100px;
+    }
+
+/* ----- EXPERIENCE ----- */
+#experience {
+    background-color: #cccccc;
+}
+
+
+/* ----- SKILLS ----- */
+#skills {
+    background-color: #ffffff;
+}
+#skills ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+
+/* ----- PROJECTS ----- */
+#projects {
+    background-color: #cccccc;
+}
+
+
+/* ----- CONTACT ----- */
+#contact {
+    background-color: #999999;
+}
+
+
+
+/* ##### ALL SECTIONS ##### */
+.main {
+    text-align: center;
+    padding: 10vh 10vw;
+}
+
+.title-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto 0 auto 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border-color: inherit
+}
+
+body {
+    /*font-family: 'Fredericka the Great', cursive;*/
+    /*font-size: 50px;*/
+}
+#nav-container {
+    width: 100px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    background-color: #444444;
+    color: #ddd;
+    font-size: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.section-nav {
+    height: 100px;
+    background-color: #444444;
+    color: #ddd;
+    font-size: 30px;
+    border-radius: 10px;
+    position: relative;
+    /*border: 1px solid green;*/
+    text-align: center;
+}
+.section-nav h4{
+  position: relative;
+    top: 30%;
+}
+
+
+/*section specifics*/
+
+.fix-search {
+  color: red;
+}
