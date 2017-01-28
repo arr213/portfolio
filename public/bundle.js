@@ -22435,9 +22435,62 @@
 	  image_url: 'bluebird.png'
 	}];
 	
-	var knowledgable = [];
+	var knowledgable = [{
+	  name: 'socket.io',
+	  image_url: 'socketio.png'
+	}, {
+	  name: 'jQuery',
+	  image_url: 'jquery.png'
+	}, {
+	  name: 'Jasmine',
+	  image_url: 'jasmine.png'
+	}, {
+	  name: 'Mocha',
+	  image_url: 'mocha.png'
+	}, {
+	  name: 'Chai',
+	  image_url: 'chain.jpg'
+	}, {
+	  name: 'Sinon',
+	  image_url: 'sinon.jpg'
+	}, {
+	  name: 'Enzyme',
+	  image_url: 'enzyme.png'
+	}, {
+	  name: 'Nunjucks',
+	  image_url: 'nunjucks.png'
+	}, {
+	  name: 'Heroku',
+	  image_url: 'heroku.png'
+	}, {
+	  name: 'PostgreSQL',
+	  image_url: 'psql.png'
+	}, {
+	  name: 'CSS3',
+	  image_url: 'css3.svg'
+	}, {
+	  name: 'SCSS',
+	  image_url: 'scss.png'
+	}, {
+	  name: 'Lodash',
+	  image_url: 'lodash.png'
+	}];
 	
-	exports.default = { proficient: proficient };
+	var learning = [{
+	  name: 'MongoDB',
+	  image_url: 'mongo.png'
+	}, {
+	  name: 'Mongoose',
+	  image_url: 'mongoose.png'
+	}, {
+	  name: 'JSData',
+	  image_url: 'js-data.png'
+	}, {
+	  name: 'DigitalOcean',
+	  image_url: 'digital.png'
+	}];
+	
+	exports.default = { proficient: proficient, knowledgable: knowledgable, learning: learning };
 
 /***/ },
 /* 190 */
@@ -22485,7 +22538,7 @@
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	exports.default = Contact;
 	
@@ -22496,25 +22549,122 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function Contact(props) {
-	    return _react2.default.createElement(
-	        "div",
-	        { id: "contact", className: "container-fluid main" },
+	  return _react2.default.createElement(
+	    "div",
+	    { id: "contact", className: "container-fluid main" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "title-block" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "contact"
+	      ),
+	      _react2.default.createElement("hr", null),
+	      _react2.default.createElement(
+	        "h2",
+	        { "class": "major" },
+	        "Get in touch"
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { "class": "inner" },
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet."
+	      ),
+	      _react2.default.createElement(
+	        "form",
+	        { method: "post", action: "#" },
 	        _react2.default.createElement(
-	            "div",
-	            { className: "title-block" },
-	            _react2.default.createElement(
-	                "h1",
-	                null,
-	                "contact"
-	            ),
-	            _react2.default.createElement("hr", null),
-	            _react2.default.createElement(
-	                "h2",
-	                null,
-	                "where to find me."
-	            )
+	          "div",
+	          { "class": "field" },
+	          _react2.default.createElement(
+	            "label",
+	            { "for": "name" },
+	            "Name"
+	          ),
+	          _react2.default.createElement("input", { type: "text", name: "name", id: "name" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { "class": "field" },
+	          _react2.default.createElement(
+	            "label",
+	            { "for": "email" },
+	            "Email"
+	          ),
+	          _react2.default.createElement("input", { type: "email", name: "email", id: "email" })
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { "class": "field" },
+	          _react2.default.createElement(
+	            "label",
+	            { "for": "message" },
+	            "Message"
+	          ),
+	          _react2.default.createElement("textarea", { name: "message", id: "message", rows: "4" })
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { "class": "actions" },
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("input", { type: "submit", value: "Send Message" })
+	          )
 	        )
-	    );
+	      ),
+	      _react2.default.createElement(
+	        "ul",
+	        { "class": "contact" },
+	        _react2.default.createElement(
+	          "li",
+	          { "class": "fa-phone" },
+	          "(914) 843-8841"
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { "class": "fa-envelope" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "information@untitled.tld"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { "class": "fa-twitter" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "twitter.com/untitled-tld"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { "class": "fa-facebook" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "facebook.com/untitled-tld"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "li",
+	          { "class": "fa-instagram" },
+	          _react2.default.createElement(
+	            "a",
+	            { href: "#" },
+	            "instagram.com/untitled-tld"
+	          )
+	        )
+	      )
+	    )
+	  );
 	}
 
 /***/ },

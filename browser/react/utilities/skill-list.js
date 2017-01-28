@@ -40,7 +40,62 @@ const proficient = [
 ];
 
 const knowledgable = [
-  
+  {
+    name: 'socket.io',
+    image_url: 'socketio.png'
+  }, {
+    name: 'jQuery',
+    image_url: 'jquery.png'
+  }, {
+    name: 'Jasmine',
+    image_url: 'jasmine.png'
+  }, {
+    name: 'Mocha',
+    image_url: 'mocha.png'
+  }, {
+    name: 'Chai',
+    image_url: 'chain.jpg'
+  }, {
+    name: 'Sinon',
+    image_url: 'sinon.jpg'
+  }, {
+    name: 'Enzyme',
+    image_url: 'enzyme.png'
+  }, {
+    name: 'Nunjucks',
+    image_url: 'nunjucks.png'
+  }, {
+    name: 'Heroku',
+    image_url: 'heroku.png'
+  }, {
+    name: 'PostgreSQL',
+    image_url: 'psql.png'
+  }, {
+    name: 'CSS3',
+    image_url: 'css3.svg'
+  }, {
+    name: 'SCSS',
+    image_url: 'scss.png'
+  }, {
+    name: 'Lodash',
+    image_url: 'lodash.png'
+  }
 ];
 
-export default {proficient};
+const learning = [
+  {
+    name: 'MongoDB',
+    image_url: 'mongo.png'
+  }, {
+    name: 'Mongoose',
+    image_url: 'mongoose.png'
+  }, {
+    name: 'JSData',
+    image_url: 'js-data.png'
+  }, {
+    name: 'DigitalOcean',
+    image_url: 'digital.png'
+  }
+];
+
+export default {proficient, knowledgable, learning};
